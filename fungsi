@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int pangkat(int a, int b){
+	int i, hasil = 1;
+	for(i = 0; i < b; i++){
+		hasil = hasil * a;
+	}
+	return hasil;
+}
+
+int main(){
+	int hasil;
+	int satu;
+	int dua;
+	printf("Masukkan bilangan 1 = ");
+	scanf("%d", &satu);
+	printf("Masukkan bilangan 2 = ");
+	scanf("%d", &dua);
+	hasil = pangkat(satu, dua);
+	printf("\nHasil bilangan pangkat = %d\n\n", hasil);
+	return 0;
+}
