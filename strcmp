@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main()
+{
+    char input[30];
+    printf("Masukkan kode barang = ");
+    scanf("%s",input);
+
+    if (strcmp(input, "kls") == 0)
+    {
+    	printf("Nama Barang = Kulkas");
+    }
+    else if(strcmp(input, "msc") == 0){
+    	printf("Nama Barang = Mesin Cuci");
+    }
+    else{
+    	printf("Kode Barang Tidak Di Temukan");
+    }
+    return 0;
+}
